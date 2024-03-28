@@ -69,8 +69,8 @@
         .img-fluid {
           width: 100%;
           height: auto;
-          vertical-align: middle;
-          border-radius: 2px;
+          vertical-align: top;
+          border-radius: 10px;
         }
         @include respond(phone) {
           box-shadow: none;
