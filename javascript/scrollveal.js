@@ -62,6 +62,13 @@ ScrollReveal().reveal(".project-wrapper__image", {
   origin: window.innerWidth > 768 ? "right" : "bottom",
 });
 
+ScrollReveal().reveal(".slideshow-container",{
+  ...defaultProps,
+  delay:600,
+  scale: 0.9,
+  origin:window.innerWidth > 760 ? "right" : "bottom",
+});
+
 /* Contact Section */
 ScrollReveal().reveal(".contact-wrapper", {
   ...defaultProps,
