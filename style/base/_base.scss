@@ -15,10 +15,18 @@ body {
   
 }
 
+.header a{
+  color: $primary-color;
+}
+
+.header a:hover{
+  color: $light-white;
+}
+
 /* Style the header */
 .header {
   
-  background: #161616;
+  background: $header-color;
   color: #f1f1f1;
   padding: 10px 16px;
   z-index: 999;
