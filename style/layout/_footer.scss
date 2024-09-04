@@ -1,6 +1,7 @@
 .footer {
   background-color: $header-color;
   padding: 4.8rem 0;
+  z-index: 7;
   &__text {
     font-size: 1.3rem;
     color: darken($white-color, 30%);
@@ -15,6 +16,8 @@
       }
     }
   }
+
+  
 
   & hr {
     margin: 1rem auto;

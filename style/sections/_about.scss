@@ -46,7 +46,7 @@
       height: 100%;
       justify-content: center;
       flex-direction: column;
-      text-align: left;
+      text-align:justify;
       @include respond(tab-port-sm) {
         align-items: center;
         text-align: center;
@@ -67,7 +67,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.2; /* Ajusta la opacidad según prefieras */
+  opacity: 0.4; /* Ajusta la opacidad según prefieras */
   z-index: 3; /* Asegura que la textura esté sobre el fondo pero debajo del contenido */
   pointer-events: none; /* Permite que los clics pasen al contenido */
 }
