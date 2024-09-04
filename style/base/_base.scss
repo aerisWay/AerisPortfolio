@@ -15,6 +15,15 @@ body {
   
 }
 
+/* Fijar la textura de fondo */
+
+
+/* Asegúrate de que todo el contenido esté por encima de la textura */
+.container, .header, .about-wrapper, .project-wrapper, .slideshow-container, .hero-title, .footer {
+  position: relative;
+  z-index: 9; /* Contenido por encima de la textura */
+}
+
 .header a{
   color: $primary-color;
 }

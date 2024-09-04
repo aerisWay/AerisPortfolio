@@ -3,6 +3,7 @@
   color: $dark-blue-text;
   margin-top: -15rem;
   padding-top: 15rem;
+  z-index: 4;
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
@@ -82,3 +83,19 @@
     }
   }
 }
+
+// #projects::after {
+//   content: "";
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-image: url('/textures/texturaFuego2.jpg'); /* Ruta a la textura */
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   opacity: 0.2; /* Ajusta la opacidad según prefieras */
+//   z-index: 5; /* Asegura que la textura esté sobre el fondo pero debajo del contenido */
+//   pointer-events: none; /* Permite que los clics pasen al contenido */
+// }

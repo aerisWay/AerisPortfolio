@@ -1,5 +1,11 @@
+
+
+
+
 #hero {
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -11,7 +17,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
   line-height: 1.2;
   animation: hidden 1000ms linear forwards;
 
@@ -71,6 +77,22 @@
       }
     }
   }
+}
+
+#hero::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/textures/texturaFuego2.jpg'); /* Ruta a la textura */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2; /* Ajusta la opacidad según prefieras */
+  z-index: 1; /* Asegura que la textura esté sobre el fondo pero debajo del contenido */
+  pointer-events: none; /* Permite que los clics pasen al contenido */
 }
 .scroll-down-link {
   position: absolute;
