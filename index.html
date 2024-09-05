@@ -151,7 +151,7 @@ Have fun creating your portfolio on this template!!! -->
           <div class="about-wrapper__image">
             <img 
               class=""
-              style="border-radius: 100%";
+              style="border-radius: 100%; border: 5px solid #d3643b;";
               src="./assets/prueba3.jpg"
               alt="Avatar"
               width="100"
@@ -193,6 +193,25 @@ Have fun creating your portfolio on this template!!! -->
     <!--Projects Section-->
     <section id="projects">
       <div class="container">
+        <div id="popupBackdrop"></div>
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="main-gif">
+              <img id="mainGif" src="" alt="Main GIF" />
+            </div>
+            
+            <div class="gallery">
+              <img id="galleryImg1" src="" alt="Gallery Image 1" />
+              <img id="galleryImg2" src="" alt="Gallery Image 2" />
+              <img id="galleryImg3" src="" alt="Gallery Image 3" />
+            </div>
+            <div class="description">
+              <p id="projectDescription"></p>
+            </div>
+          </div>
+        </div>
+
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text" style="text-align: center;">Projects</h2>
           <table>
@@ -202,7 +221,7 @@ Have fun creating your portfolio on this template!!! -->
                   
                     <div class="image-container">
                         <img src="./assets/Caratulas/BehindUCaratula.jpg" alt="BehindU">
-                        <a href=""><div class="overlay">Behind U</div></a>
+                        <a href=""  role="button" onclick="event.preventDefault();openPopup('project1')"><div class="overlay">Behind U</div></a>
                      
                     </div>
                 </td>
@@ -395,5 +414,6 @@ Have fun creating your portfolio on this template!!! -->
     <script type="text/javascript" src="./javascript/slides.js"></script>
     <script type="text/javascript" src="./javascript/sticky.js"></script>
     <script type="text/javascript" src="./javascript/scrollHeader.js"></script>
+    <script type="text/javascript" src="./javascript/popup.js"></script>
   </body>
 </html>
