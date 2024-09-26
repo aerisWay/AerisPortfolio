@@ -35,7 +35,7 @@
   }
 
   .hero-title {
-    font-size: 4rem;
+    font-size: 60px;
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
@@ -62,8 +62,10 @@
 
   .hero-cta {
     display: inline-block;
-    margin-left: 30px;
-    padding-left: 10%;
+    margin-left: 10px;
+    padding-left: 15%;
+    
+    
 
     @include respond(tab-port) {
       justify-content: center;
