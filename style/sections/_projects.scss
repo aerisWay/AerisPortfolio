@@ -163,19 +163,53 @@ caption {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(55, 47, 88);
+  transform: translate(-50%, -50%), scale(0);
+  background-color: #403b33;
   padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 90%;  
+  border: 0px solid #f46e3e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
   max-height: 85%; /* Adjust as needed */
   overflow-y: auto; /* Enable vertical scrolling */
   display: none;
   z-index: 1000;
-  
+  border-radius: 30px;
+  opacity: 0; /* Start fully transparent */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
+.popup.show {
+  display: block; /* Make it block for visibility */
   
+  transform: translate(-50%, -50%) scale(1); /* Scale to original size */
+  opacity: 1; /* Fully visible */
+}
+
+.popup.hide {
+  transform: translate(-50%, -50%) scale(0); /* Scale down */
+  opacity: 0; /* Fully transparent */
+}
+
+
+.popup::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+  
+ 
+}
+
+.popup::-webkit-scrollbar-track {
+  background: white; /* Color de fondo de la pista */
+  border-radius: 10px; /* Esquinas redondeadas de la pista */
+  margin-right: 20px; /* This moves the track left */
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background: #46aeb6; /* Color de la parte deslizante */
+  border-radius: 10px; /* Esquinas redondeadas de la parte deslizante */
+}
+
+.popup::-webkit-scrollbar-thumb:hover {
+  background: #96cace; /* Color de la parte deslizante al pasar el ratón */
 }
 
 #popupBackdrop {
@@ -184,7 +218,7 @@ caption {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: none;
   z-index: 999;
 }
@@ -196,41 +230,56 @@ caption {
 
 /* Popup content */
 .popup-content {
-  background-color: #37678c;
+  background-color: #403b33;
   margin: auto;
-  padding: 20px;
-  //border: 1px solid #888;
+  padding: 0px;
   width: 100%;
+  max-height: 100%;
   position: relative;
 }
 
 /* Close button */
 .close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 30px;
+  position: sticky;
+  top: 0px;
+  left: 100%;
+  font-size: 40px;
   cursor: pointer;
+  color: white;
+}
+
+.close:hover{
+  color: #46aeb6;
 }
 
 .main-gif {
-  text-align: left;
-  width: 50%;
+  display: block;
+  margin: 0 auto; /* Centro el GIF */
+  width: 70%; /* Puedes ajustar este valor según sea necesario */
 }
 
 .gallery {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Cambiado para centrar las imágenes */
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan en lugar de cortarse */
   margin-top: 15px;
 }
 
 .gallery img {
-   width: 100%;
+  max-width: 20%; /* Permite que las imágenes se reduzcan dentro del contenedor */
   height: auto; /* Mantiene la relación de aspecto */
-  object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsión */
-  max-height: 300px; /* Altura máxima para las imágenes */
+  object-fit: contain; /* Ajusta la imagen para que esté completamente visible */
+  max-height: 10%; /* Altura máxima para las imágenes */
+  margin: 20px; /* Espacio entre imágenes */
 }
 
 .description {
-  margin-top: 20px;
+  margin-top: 20px;  
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+
+#projectDescription{
+  font-size: 20px;
 }
