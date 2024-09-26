@@ -1,7 +1,7 @@
 const projectsData = {
     project1: {
-      mainGif: '../assets/GifsVFX/portal.gif',
-      gallery: ['../assets/Segorbe/duque.png', '../assets/Segorbe/duque.png', '../assets/Segorbe/duque.png'],
+      mainGif: './assets/GifsVFX/portal.gif',
+      gallery: ['./assets/Segorbe/duque.png', './assets/Segorbe/duque.png', './assets/Segorbe/duque.png'],
       description: 'In Project 1, I was responsible for developing the core gameplay mechanics and optimizing performance in Unity.'
     },
     project2: {
