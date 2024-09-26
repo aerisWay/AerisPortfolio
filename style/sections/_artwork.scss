@@ -1,6 +1,7 @@
 #artwork {
   z-index: 6;
   background-color: $primary-color;
+ 
   background-image: linear-gradient(
     135deg,
     $primary-color 0%,
@@ -9,7 +10,7 @@
   color: $header-color;
   height: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 500%, 0 500%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 120%, 0 120%);
   padding-bottom: 5%;
   @include respond(tab-land) {
     height: 100%;

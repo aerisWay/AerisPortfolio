@@ -198,15 +198,33 @@ Have fun creating your portfolio on this template!!! -->
         <div id="popup" class="popup">
           <div class="popup-content">
             <span class="close" onclick="closePopup()">&times;</span>
-            <div class="main-gif">
-              <img id="mainGif" src="" alt="Main GIF" />
+            <div style="text-align: center;">
+              <iframe width="1280" height="720" id="mainGif" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+              web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
             </div>
+            
+            
+            <!-- <div class="main-gif">
+              <img id="mainGif" src="" alt="Main GIF" />
+            </div> -->
+
+            
+          
             
             <div class="gallery">
               <img id="galleryImg1" src="" alt="Gallery Image 1" />
               <img id="galleryImg2" src="" alt="Gallery Image 2" />
               <img id="galleryImg3" src="" alt="Gallery Image 3" />
             </div>
+
+            <p class="test-button" style="text-align: center; width: 20%; height: 20%; margin-left: 40%;">
+              <a class="btn-play" id="mainButton" style="text-align: center;" target="_blank"  href="">
+                <img src="" id="mainImageButton"  style="border-radius: 100%; " alt="Icono de ItchIO" class="enlargable-image">
+  
+              </a>              
+            </p>
+            
             <div class="description">
               <p id="projectDescription"></p>
             </div>
@@ -221,7 +239,7 @@ Have fun creating your portfolio on this template!!! -->
                 <td>
                   
                     <div class="image-container">
-                        <img src="./assets/Caratulas/BehindUCaratula.jpg" alt="BehindU">
+                        <img src="./assets/Caratulas/caratulaBehindU.png" alt="BehindU">
                         <a href=""  role="button" onclick="event.preventDefault();openPopup('project1')"><div class="overlay">Behind U</div></a>
                      
                     </div>
@@ -229,19 +247,19 @@ Have fun creating your portfolio on this template!!! -->
                 <td>
                     <div class="image-container">
                         <img src="./assets/Caratulas/RailRoadCaratula.png" alt="Railroad Dungeon">
-                        <a href=""><div class="overlay">Railroad Dundeon</div></a>
+                        <a href="" role="button" onclick="event.preventDefault();openPopup('project2')"><div class="overlay" >Railroad Dungeon</div></a>
                     </div>
                 </td>
                 <td>
                     <div class="image-container">
                         <img src="./assets/Caratulas/GuardianesCaratula.png" alt="Guardianes de Segorbe">
-                        <a href=""><div class="overlay">Guardianes de Segorbe</div></a>
+                        <a href="" role="button" onclick="event.preventDefault();openPopup('project3')"><div class="overlay">Guardianes de Segorbe</div></a>
                     </div>
                 </td>
                 <td>
                     <div class="image-container">
                         <img src="./assets/Caratulas/VoodooWarsCaratula.png" alt="VoodooWars">
-                        <a href=""><div class="overlay">Voodoo Wars</div></a>
+                        <a href="" role="button" onclick="event.preventDefault();openPopup('project4')"><div class="overlay">Voodoo Wars</div></a>
                     </div>
                 </td>
             </tr>
@@ -249,26 +267,26 @@ Have fun creating your portfolio on this template!!! -->
                 <td>
                     <div class="image-container">
                         <img src="./assets/Caratulas/RangiCaratula.jpg" alt="Rangi">
-                        <a href=""><div class="overlay">Rangi</div></a>
+                        <a href="" role="button" onclick="event.preventDefault();openPopup('project5')"><div class="overlay">Rangi</div></a>
                     </div>
                 </td>
                 <td>
                     <div class="image-container">
                         <img src="./assets/Caratulas/TypeforceCaratula.png" alt="TypeForce">
-                        <a href=""><div class="overlay">Typeforce</div></a>
+                        <a href="" role="button" onclick="event.preventDefault();openPopup('project6')"><div class="overlay">Typeforce</div></a>
                     </div>
                 </td>
                 <td>
                     <div class="image-container">
                         <img src="./assets/Caratulas/gameexeCaratula.png" alt="Game.exe">
-                        <a href=""><div class="overlay">Game.exe</div></a>
+                        <a href="" role="button" onclick="event.preventDefault();openPopup('project7')"><div class="overlay">Game.exe</div></a>
                         
                     </div>
                 </td>
                 <td>
                     <div class="image-container">
                         <img src="./assets/Caratulas/tenebrisCaratula.png" alt="Tenebris Cordis">
-                        <a href=""><div class="overlay">Tenebris Cordis</div></a>
+                        <a href="" role="button" onclick="event.preventDefault();openPopup('project8')"><div class="overlay">Tenebris Cordis</div></a>
                     </div>
                 </td>
             </tr>
@@ -305,7 +323,7 @@ Have fun creating your portfolio on this template!!! -->
       <div class="container">
         <h2 class="section-title" style="text-align: center;">Contact</h2>
         <div class="contact-wrapper" style="text-align: center;">
-          <p class="contact-wrapper__text">Appreciate your interest ^^</p>
+          <h1 class="hero-title" style="text-align: center; font-size: 30px;">Appreciate your interest!</h1>
           <p class="contact-wrapper__text">auredevgames@gmail.com</p>
           <a href="#" class="cta-btn cta-btn--resume" id="copyLink">Copy to clipboard</a>
           <a href="mailto:auredevgames@gmail.com" class="cta-btn cta-btn--resume">Talk to me</a>

@@ -1,24 +1,77 @@
-const projectsData = {
+const projectsData = { //Behind You
     project1: {
-      mainGif: './assets/GifsVFX/portal.gif',
-      gallery: ['./assets/Segorbe/duque.png', './assets/Segorbe/duque.png', './assets/Segorbe/duque.png'],
-      description: 'In Project 1, I was responsible for developing the core gameplay mechanics and optimizing performance in Unity. asdsadasuhjfbweuyfgbwue4ybgfuywebgfuywbeyugbweuygbweuybgyuwebguy'
+      mainGif: "https://www.youtube.com/embed/T-_3d2aRCAo?si=E0yedPrl1r72h1J3vq=hd1080",
+      gallery: ['./assets/BehindU/BehindUGameplayFinal.jpg', './assets/BehindU/BehindUGameplayFinal (4).jpg', './assets/BehindU/BehindUGameplayFinal (8).jpg'],
+      button: ['./assets/itchio.png', 'https://aerisway.itch.io/behind-you'],
+      description: "My last project, developed in Unreal Engine 5. I used a photorealistic and detailed style. <br> <br> I used a photorealistic and detailed style (Metahuman for the main character) to create a thriller game with hand-crafted levels. The game is a third-person shooter set in an escape room environment. <br> <br> I developed AI agents that communicate with each other in-game, where smaller enemies scream to alert the larger one. <br> <br> I have dedicated a significant amount of time to this personal project and am proud of its polished and professional appearance."
+
     },
-    project2: {
-      mainGif: 'path/to/mainGif2.gif',
-      gallery: ['path/to/gallery2_1.jpg', 'path/to/gallery2_2.jpg', 'path/to/gallery2_3.jpg'],
-      description: 'In Project 2, I worked on designing shader materials and creating 3D models in Blender.'
+    project2: { //RailRoad
+      mainGif: "https://www.youtube.com/embed/T-_3d2aRCAo?si=E0yedPrl1r72h1J3vq=hd1080",
+      gallery: ['./assets/BehindU/BehindUGameplayFinal.jpg', './assets/BehindU/BehindUGameplayFinal (4).jpg', './assets/BehindU/BehindUGameplayFinal (8).jpg'],
+      button: ['./assets/itchio.png', 'https://aerisway.itch.io/behind-you'],
+      description: "My last project, developed in Unreal Engine 5. I used a photorealistic and detailed style. <br> <br> I used a photorealistic and detailed style (Metahuman for the main character) to create a thriller game with hand-crafted levels. The game is a third-person shooter set in an escape room environment. <br> <br> I developed AI agents that communicate with each other in-game, where smaller enemies scream to alert the larger one. <br> <br> I have dedicated a significant amount of time to this personal project and am proud of its polished and professional appearance."
+    },
+
+    project3: { //Segorbe
+      mainGif: "https://www.youtube.com/embed/fvu1kAoc4-g?si=8RN5f-vWdQPM3r5Kvq=hd1080",
+      gallery: ['./assets/Segorbe/ajedrez.png', './assets/Segorbe/marialuna.jpg', './assets/Segorbe/titulo.jpg'],
+      button: ['./assets/itchio.png', 'https://play.google.com/store/apps/details?id=com.Gamers.Guardianes&hl=es_UY'],
+      description: "My last project, developed in Unreal Engine 5. I used a photorealistic and detailed style. <br> <br> I used a photorealistic and detailed style (Metahuman for the main character) to create a thriller game with hand-crafted levels. The game is a third-person shooter set in an escape room environment. <br> <br> I developed AI agents that communicate with each other in-game, where smaller enemies scream to alert the larger one. <br> <br> I have dedicated a significant amount of time to this personal project and am proud of its polished and professional appearance."
+    },
+
+    project4: { //Voodoo Wars
+      mainGif: "https://www.youtube.com/embed/T-_3d2aRCAo?si=E0yedPrl1r72h1J3vq=hd1080",
+      gallery: ['./assets/BehindU/BehindUGameplayFinal.jpg', './assets/BehindU/BehindUGameplayFinal (4).jpg', './assets/BehindU/BehindUGameplayFinal (8).jpg'],
+      button: ['./assets/itchio.png', 'https://aerisway.itch.io/vodoo-wars'],
+      description: "My last project, developed in Unreal Engine 5. I used a photorealistic and detailed style. <br> <br> I used a photorealistic and detailed style (Metahuman for the main character) to create a thriller game with hand-crafted levels. The game is a third-person shooter set in an escape room environment. <br> <br> I developed AI agents that communicate with each other in-game, where smaller enemies scream to alert the larger one. <br> <br> I have dedicated a significant amount of time to this personal project and am proud of its polished and professional appearance."
+    },
+
+    project5: { //Rangi
+      mainGif: "https://www.youtube.com/embed/ZColxBxBo80?si=gUYuhfx4VZehYkCevq=hd1080",
+      gallery: ['./assets/BehindU/BehindUGameplayFinal.jpg', './assets/BehindU/BehindUGameplayFinal (4).jpg', './assets/BehindU/BehindUGameplayFinal (8).jpg'],
+      button: ['./assets/itchio.png', 'https://mariavllr.itch.io/rangi'],
+      description: "My last project, developed in Unreal Engine 5. I used a photorealistic and detailed style. <br> <br> I used a photorealistic and detailed style (Metahuman for the main character) to create a thriller game with hand-crafted levels. The game is a third-person shooter set in an escape room environment. <br> <br> I developed AI agents that communicate with each other in-game, where smaller enemies scream to alert the larger one. <br> <br> I have dedicated a significant amount of time to this personal project and am proud of its polished and professional appearance."
+    },
+
+    project6: { //Typeforce
+      mainGif: "https://www.youtube.com/embed/T-_3d2aRCAo?si=E0yedPrl1r72h1J3vq=hd1080",
+      gallery: ['./assets/BehindU/BehindUGameplayFinal.jpg', './assets/BehindU/BehindUGameplayFinal (4).jpg', './assets/BehindU/BehindUGameplayFinal (8).jpg'],
+      button: ['./assets/itchio.png', 'https://aerisway.itch.io/typeforce'],
+      description: "My last project, developed in Unreal Engine 5. I used a photorealistic and detailed style. <br> <br> I used a photorealistic and detailed style (Metahuman for the main character) to create a thriller game with hand-crafted levels. The game is a third-person shooter set in an escape room environment. <br> <br> I developed AI agents that communicate with each other in-game, where smaller enemies scream to alert the larger one. <br> <br> I have dedicated a significant amount of time to this personal project and am proud of its polished and professional appearance."
+    },
+
+    project7: { //Game.exe
+      mainGif: "https://www.youtube.com/embed/T-_3d2aRCAo?si=E0yedPrl1r72h1J3vq=hd1080",
+      gallery: ['./assets/BehindU/BehindUGameplayFinal.jpg', './assets/BehindU/BehindUGameplayFinal (4).jpg', './assets/BehindU/BehindUGameplayFinal (8).jpg'],
+      button: ['./assets/itchio.png', 'https://mariavllr.itch.io/system-33'],
+      description: "My last project, developed in Unreal Engine 5. I used a photorealistic and detailed style. <br> <br> I used a photorealistic and detailed style (Metahuman for the main character) to create a thriller game with hand-crafted levels. The game is a third-person shooter set in an escape room environment. <br> <br> I developed AI agents that communicate with each other in-game, where smaller enemies scream to alert the larger one. <br> <br> I have dedicated a significant amount of time to this personal project and am proud of its polished and professional appearance."
+    },
+
+    project8: { //Tenebris Cordis
+      mainGif: "https://www.youtube.com/embed/cYgbT7C9HoE?si=sFkUjcUj3lGi7Y1Zvq=hd1080",
+      gallery: ['./assets/BehindU/BehindUGameplayFinal.jpg', './assets/BehindU/BehindUGameplayFinal (4).jpg', './assets/BehindU/BehindUGameplayFinal (8).jpg'],
+      button: ['./assets/itchio.png', 'https://aerisway.itch.io/behind-you'],
+      description: "My last project, developed in Unreal Engine 5. I used a photorealistic and detailed style. <br> <br> I used a photorealistic and detailed style (Metahuman for the main character) to create a thriller game with hand-crafted levels. The game is a third-person shooter set in an escape room environment. <br> <br> I developed AI agents that communicate with each other in-game, where smaller enemies scream to alert the larger one. <br> <br> I have dedicated a significant amount of time to this personal project and am proud of its polished and professional appearance."
     }
     // Add more projects as needed
   };
   
   function openPopup(projectId) {
+  
     const project = projectsData[projectId];
-    document.getElementById('mainGif').src = project.mainGif;
+ 
     document.getElementById('galleryImg1').src = project.gallery[0];
     document.getElementById('galleryImg2').src = project.gallery[1];
     document.getElementById('galleryImg3').src = project.gallery[2];
-    document.getElementById('projectDescription').textContent = project.description;
+
+    document.getElementById('mainButton').href = project.button[1];
+    document.getElementById('mainImageButton').src = project.button[0];
+   
+    document.getElementById('projectDescription').innerHTML = project.description;
+
+    document.getElementById('mainGif').src = project.mainGif;
+   
   
     const popup = document.getElementById('popup');
     const popupBackdrop = document.getElementById('popupBackdrop');
@@ -26,6 +79,8 @@ const projectsData = {
     // Show backdrop
     popupBackdrop.style.display = 'block'; 
     document.body.classList.add('no-scroll'); // Prevent scrolling on the main page
+
+    
   
     // Show popup and trigger transition
     popup.style.display = 'block'; // Set display to block
