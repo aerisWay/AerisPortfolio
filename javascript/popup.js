@@ -1,5 +1,6 @@
 const projectsData = { //Behind You
     project1: {
+      title: "Behind You",
       mainGif: "https://www.youtube.com/embed/T-_3d2aRCAo?si=E0yedPrl1r72h1J3vq=hd1080",
       gallery: ['./assets/BehindU/BehindUGameplayFinal.jpg', './assets/BehindU/BehindUGameplayFinal (4).jpg', './assets/BehindU/BehindUGameplayFinal (8).jpg'],
       button: ['./assets/itchio.png', 'https://aerisway.itch.io/behind-you'],
@@ -7,6 +8,7 @@ const projectsData = { //Behind You
 
     },
     project2: { //RailRoad
+      title: "Railroad Project",
       mainGif: "",
       gallery: ['./assets/RailRoad/Estatua.png', './assets/RailRoad/prototipo.png', './assets/RailRoad/pickaxe.png'],
       button: ['', ''],
@@ -14,6 +16,7 @@ const projectsData = { //Behind You
     },
 
     project3: { //Segorbe
+      title: "Guardianes de Segorbe",
       mainGif: "https://www.youtube.com/embed/fvu1kAoc4-g?si=8RN5f-vWdQPM3r5Kvq=hd1080",
       gallery: ['./assets/Segorbe/ajedrez.png', './assets/Segorbe/marialuna.jpg', './assets/Segorbe/titulo.jpg'],
       button: ['./assets/googlePlayLogo.png', 'https://play.google.com/store/apps/details?id=com.Gamers.Guardianes&hl=es_UY'],
@@ -21,6 +24,7 @@ const projectsData = { //Behind You
     },
 
     project4: { //Voodoo Wars
+      title: "Voodoo Wars!",
       mainGif: "",
       gallery: ['./assets/VoodooWars/shader.png', './assets/VoodooWars/finalResult.png', './assets/VoodooWars/pruebaShader.png'],
       button: ['./assets/itchio.png', 'https://aerisway.itch.io/vodoo-wars'],
@@ -28,6 +32,7 @@ const projectsData = { //Behind You
     },
 
     project5: { //Rangi
+      title: "Rangi",
       mainGif: "https://www.youtube.com/embed/ZColxBxBo80?si=gUYuhfx4VZehYkCevq=hd1080",
       gallery: ['./assets/Rangi/pueblo.png', './assets/Rangi/conversacion.png', './assets/Rangi/bosque.png'],
       button: ['./assets/itchio.png', 'https://mariavllr.itch.io/rangi'],
@@ -35,6 +40,7 @@ const projectsData = { //Behind You
     },
 
     project6: { //Typeforce
+      title: "Typeforce",
       mainGif: "https://www.youtube.com/embed/-WY2KStV0d8?si=47Dg-9t3-FDJ9CVcvq=hd1080",
       gallery: ['./assets/Typeforce/image2.png', './assets/Typeforce/image3.png', './assets/Typeforce/image4.png'],
       button: ['./assets/itchio.png', 'https://aerisway.itch.io/typeforce'],
@@ -42,6 +48,7 @@ const projectsData = { //Behind You
     },
 
     project7: { //System 33
+      title: "System 33",
       mainGif: "https://www.youtube.com/embed/APvcwAp7G1A?si=-HSOIbxorCZdZsUWvq=hd1080",
       gallery: ['./assets/System33/image4.png', './assets/System33/image5.png', './assets/System33/image6.png'],
       button: ['./assets/itchio.png', 'https://mariavllr.itch.io/system-33'],
@@ -49,6 +56,7 @@ const projectsData = { //Behind You
     },
 
     project8: { //Tenebris Cordis
+      title: "Tenebris Cordis",
       mainGif: "https://www.youtube.com/embed/cYgbT7C9HoE?si=sFkUjcUj3lGi7Y1Zvq=hd1080",
       gallery: ['./assets/Tenebris/image10.png', './assets/Tenebris/image11.png', './assets/Tenebris/image12.png'],
       button: ['', ''],
@@ -60,6 +68,8 @@ const projectsData = { //Behind You
   function openPopup(projectId) {
   
     const project = projectsData[projectId];
+
+    document.getElementById('tituloPopUp').innerHTML = project.title;
  
     document.getElementById('galleryImg1').src = project.gallery[0];
     document.getElementById('galleryImg2').src = project.gallery[1];
