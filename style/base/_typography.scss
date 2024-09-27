@@ -20,6 +20,12 @@ a:hover {
   margin-bottom: 4.5rem;
   font-size: $big-font-size;
   text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 
+  0px 0px 0 white, /* Sombra en la esquina superior izquierda */
+  0px -0px 0 white,  /* Sombra en la esquina superior derecha */
+  -0px 0px 0 white,  /* Sombra en la esquina inferior izquierda */
+  3px 3px 0 #403b33;   /* Sombra en la esquina inferior derecha */
   @include respond(phone) {
     font-size: 2.8rem;
   }

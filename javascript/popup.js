@@ -125,21 +125,31 @@ const projectsData = { //Behind You
   } else {
     // Mostrar y actualizar el src del iframe
     if (!mainGif) {
-        // Crear el iframe si no existe y añadirlo al contenedor
-        mainGif = document.createElement('iframe');
-        mainGif.id = 'mainGif';
-        mainGif.width = '1280';
-        mainGif.height = '720';
-        mainGif.title = 'YouTube video player';
-        mainGif.frameBorder = '0';
-        mainGif.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-        mainGif.referrerPolicy = 'strict-origin-when-cross-origin';
-        mainGif.allowFullscreen = true;
-        mainGifContainer.appendChild(mainGif);
-    }
-    mainGif.style.display = 'block';
-    mainGif.src = project.mainGif;
-    mainGif.style.marginLeft = '22%';
+      // Crear el iframe si no existe y añadirlo al contenedor
+      mainGif = document.createElement('iframe');
+      mainGif.id = 'mainGif';
+      mainGif.width = '1280';
+      mainGif.height = '720';
+      mainGif.title = 'YouTube video player';
+      mainGif.frameBorder = '0';
+      mainGif.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      mainGif.referrerPolicy = 'strict-origin-when-cross-origin';
+      mainGif.allowFullscreen = true;
+      
+      // Asegúrate de que el contenedor está listo para flexbox
+      mainGifContainer.style.display = 'flex';
+      mainGifContainer.style.justifyContent = 'center'; // Centra horizontalmente
+      mainGifContainer.style.alignItems = 'center'; // Centra verticalmente si el contenedor tiene altura definida
+      
+      mainGifContainer.appendChild(mainGif);
+  }
+  
+  // Establece el src del video y muestra el iframe
+  mainGif.style.display = 'block';
+  mainGif.src = project.mainGif;
+  
+  // Elimina el margin-left, no es necesario con flexbox
+  mainGif.style.marginLeft = '0';
   }
   
     const popup = document.getElementById('popup');

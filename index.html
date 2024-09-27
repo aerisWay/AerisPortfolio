@@ -114,7 +114,7 @@ Have fun creating your portfolio on this template!!! -->
     
     <!-- Hero Section -->
     <div id="hero">
-      <section class="container">
+      <section class="container" style="margin-left: 0%; padding-bottom: 0%;">
 
        
         <h1 class="hero-title">
@@ -134,32 +134,36 @@ Have fun creating your portfolio on this template!!! -->
         <div class="scroll-down"></div
       ></a>
 
-      <video class="hero-title" width="50%" height="auto" controls>
-        <source src="./assets/PortfolioVideo2024_peque.mp4" type="video/mp4"> 
-      Your browser does not support the video tag.
-      </video autoplay>
+     
     </div>
     <!-- /END Hero Section -->
 
     <!-- About Section -->
     <section id="about">
-      <div class="container">
+      <div class="container" >
+
         <br>
         <br>
         <h2 class="section-title" style="text-align: center;">About Me</h2>
         <div class="row about-wrapper">
-          <div class="about-wrapper__image">
+          <div class="about-wrapper__image" style="display: flex; flex-direction: column; align-items: center;">
             <img 
               class=""
-              style="border-radius: 100%; border: 5px solid #d3643b;";
+              style="border-radius: 100%; border: 5px solid #c08122;";
               src="./assets/prueba3.jpg"
               alt="Avatar"
               width="100"
               height="auto"
               
             />
+
+            <span class="about-wrapper__cta" style="display: flex; text-align: center; ">
+              <a href="./assets/TechnicalArtistCV.pdf" target="_blank" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
           </div>
-          <div class="about-wrapper__info">
+
+          
+          <div class="about-wrapper__info" style="background: #c08122; border-radius: 10%; padding: 10%">
             <p class="about-wrapper__info-text">
               <b>Hello and welcome to my portfolio!</b>
             </p>
@@ -181,11 +185,11 @@ Have fun creating your portfolio on this template!!! -->
             <p class="about-wrapper__info-text">
               People usually laugh a lot with me. I really like medieval fantasy and every class of bird. I enjoy weightlifting too!
             </p>
-            <span class="about-wrapper__cta">
-              <a href="./assets/TechnicalArtistCV.pdf" target="_blank" class="cta-btn cta-btn--resume">View Resume</a>
-            </span>
+            
             
           </div>
+
+          
         </div>
       </div>
     </section>
@@ -194,6 +198,10 @@ Have fun creating your portfolio on this template!!! -->
     <!--Projects Section-->
     <section id="projects">
       <div class="container">
+
+        
+
+
         <div id="popupBackdrop"></div>
         <div id="popup" class="popup">
           <div class="popup-content">
@@ -246,6 +254,11 @@ Have fun creating your portfolio on this template!!! -->
 
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text" style="text-align: center;">Projects</h2>
+
+          <video class="hero-title" width="100%" height="auto" controls>
+            <source src="./assets/PortfolioVideo2024_peque.mp4" type="video/mp4"> 
+          Your browser does not support the video tag.
+          </video autoplay>
           <table>
             
             <tr>
@@ -318,9 +331,9 @@ Have fun creating your portfolio on this template!!! -->
       
       <h2 class="section-title" style="text-align: center;">Artwork</h2>
       
-      <h1 class="hero-title" style="text-align: center;">Look at my ArtStation to see my Shaders & FX!</h1>
+      <h1 class="hero-title" style="text-align: center; color: #171717;">Look at my ArtStation to see my Shaders & FX!</h1>
       <a href="https://auredevgames.artstation.com/" class="about-wrapper__image" target="_blank">    
-        <img src="./assets/Logos/logoArtStation.png" style="border-radius: 100%; justify-content: center;" alt="Icono de ArtStation" class="enlargable-image">
+        <img src="./assets/Logos/logoArtStation.png" style="border-radius: 100%; justify-content: center; width: 20%;" alt="Icono de ArtStation" class="enlargable-image">
       </a>     
       </h1>
       <h1> 
@@ -336,10 +349,13 @@ Have fun creating your portfolio on this template!!! -->
       <div class="container">
         <h2 class="section-title" style="text-align: center;">Contact</h2>
         <div class="contact-wrapper" style="text-align: center;">
-          <h1 class="hero-title" style="text-align: center; font-size: 30px;">Appreciate your interest!</h1>
+          <h1 class="hero-title" style="text-align: center; font-size: 30px; color:#171717">Appreciate your interest!</h1>
           <p class="contact-wrapper__text">auredevgames@gmail.com</p>
-          <a href="#" class="cta-btn cta-btn--resume" id="copyLink">Copy to clipboard</a>
-          <a href="mailto:auredevgames@gmail.com" class="cta-btn cta-btn--resume">Talk to me</a>
+          <!-- <p class="hero-cta">
+            <a class="cta-btn cta-btn--hero" href="#projects">To projects</a>
+          </p> -->
+          <a href="#" class="cta-btn cta-btn--hero" id="copyLink">Copy to clipboard</a>
+          <a href="mailto:auredevgames@gmail.com" class= "cta-btn cta-btn--hero">Talk to me</a>
           <img style="text-align: center; width: 300px; height: 300px; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;" src="./assets/devfolio-logo.png" alt="Dev logo">
 
         </div>
@@ -398,14 +414,9 @@ Have fun creating your portfolio on this template!!! -->
         </div>
         <hr />
         <p class="footer__text" style="color:#d3643b">
-          &copy; <span id="year" style="color:#d3643b"></span> - Template by
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="color:#d3643b"
-            >Anil Seervi</a
-          >. <br />Made with &hearts;
+          &copy; <span id="year" style="color:#d3643b"></span> 
+          
+          <br />Made with &hearts;
         </p>
       </div>
     </footer>
