@@ -1,6 +1,6 @@
 #artwork {
   z-index: 6;
-  
+  position:relative;
   background: url('../assets/aguagif.gif'); /* Ruta al GIF de fondo */
   background-position: center;
   background-size: cover; /* Ajusta el tamaño del GIF para cubrir toda la sección */
