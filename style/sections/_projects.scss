@@ -185,50 +185,45 @@ caption {
 //   pointer-events: none; /* Permite que los clics pasen al contenido */
 // }
 
-//POP UP
 /* Popup container */
 .popup {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%), scale(0);
+  transform: translate(-50%, -50%) scale(0);
   background-color: #403b33;
   padding: 20px;
   border: 0px solid #f46e3e;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-height: 85%; /* Adjust as needed */
-  overflow-y: auto; /* Enable vertical scrolling */
+  width: 90%; /* Mantener el ancho para móviles */
+  max-height: 85%; /* Altura máxima */
+  overflow-y: auto; /* Habilitar desplazamiento vertical */
   display: none;
   z-index: 1000;
   border-radius: 30px;
-  opacity: 0; /* Start fully transparent */
+  opacity: 0; /* Comienza completamente transparente */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .popup.show {
-  display: block; /* Make it block for visibility */
-  
-  transform: translate(-50%, -50%) scale(1); /* Scale to original size */
-  opacity: 1; /* Fully visible */
+  display: block; /* Hacerlo block para visibilidad */
+  transform: translate(-50%, -50%) scale(1); /* Escalar al tamaño original */
+  opacity: 1; /* Totalmente visible */
 }
 
 .popup.hide {
-  transform: translate(-50%, -50%) scale(0); /* Scale down */
-  opacity: 0; /* Fully transparent */
+  transform: translate(-50%, -50%) scale(0); /* Escalar hacia abajo */
+  opacity: 0; /* Totalmente transparente */
 }
-
 
 .popup::-webkit-scrollbar {
   width: 10px; /* Ancho de la barra de desplazamiento */
-  
- 
 }
 
 .popup::-webkit-scrollbar-track {
   background: white; /* Color de fondo de la pista */
   border-radius: 10px; /* Esquinas redondeadas de la pista */
-  margin-right: 20px; /* This moves the track left */
+  margin-right: 20px; /* Esto mueve la pista a la izquierda */
 }
 
 .popup::-webkit-scrollbar-thumb {
@@ -251,46 +246,46 @@ caption {
   z-index: 999;
 }
 
-/* Styling for the body to prevent scrolling */
+/* Estilo para el body para evitar el desplazamiento */
 .no-scroll {
   overflow: hidden;
 }
 
-/* Popup content */
+/* Contenido del popup */
 .popup-content {
   background-color: #403b33;
   margin: auto;
   padding: 0px;
-  width: 100%;
-  max-height: 100%;
+  width: 100%; /* Ancho completo */
+  max-height: 100%; /* Altura máxima */
   position: relative;
 }
 
-/* Close button */
+/* Botón de cierre */
 .close {
   position: sticky;
   top: 0px;
   left: 100%;
-  font-size: 40px;
+  font-size: 40px; /* Tamaño de fuente grande para escritorio */
   cursor: pointer;
   color: white;
   z-index: 1001;
 }
 
-.close:hover{
+.close:hover {
   color: #46aeb6;
 }
 
 .main-gif {
   display: block;
   margin: 0 auto; /* Centro el GIF */
-  width: 70%; /* Puedes ajustar este valor según sea necesario */
+  width: 70%; /* Ajusta este valor según sea necesario */
 }
 
 .gallery {
   display: flex;
   justify-content: center; /* Cambiado para centrar las imágenes */
-  flex-wrap: wrap; /* Permite que las imágenes se envuelvan en lugar de cortarse */
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan */
   margin-top: 15px;
 }
 
@@ -304,11 +299,42 @@ caption {
 
 .description {
   margin-top: 20px;  
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 20px;
+  margin-left: 200px; /* Espaciado izquierdo para escritorio */
+  margin-right: 200px; /* Espaciado derecho para escritorio */
+  margin-bottom: 20px; /* Espaciado inferior */
 }
 
-#projectDescription{
+#projectDescription {
   font-size: 20px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .popup {
+    width: 95%; /* Ancho del popup en móviles */
+    padding: 10px; /* Ajuste de padding para móviles */
+    max-height: 90%; /* Aumentar la altura máxima en móviles */
+  }
+
+  .close {
+    font-size: 30px; /* Tamaño de fuente más pequeño para el botón de cierre en móviles */
+    position: absolute; /* Cambiado a posición absoluta */
+    top: 10px; /* Ajuste según sea necesario */
+    right: 10px; /* Ajuste según sea necesario */
+  }
+
+  .main-gif {
+    width: 100%; /* GIF ocupa todo el ancho en móviles */
+  }
+
+  .gallery img {
+    max-width: 100%; /* Las imágenes ocupan el 100% en móviles */
+    margin: 10px; /* Espacio entre imágenes */
+  }
+
+  .description {
+    margin: 10px; /* Margen más pequeño en móviles */
+    margin-left: 10px; /* Margen izquierdo más pequeño */
+    margin-right: 10px; /* Margen derecho más pequeño */
+  }
 }
