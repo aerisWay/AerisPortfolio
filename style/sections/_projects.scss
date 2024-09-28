@@ -276,6 +276,14 @@ caption {
   color: #46aeb6;
 }
 
+.test-button{
+  text-align: center; 
+  width: 20%; 
+  height: 20%; 
+  margin-left: 40%; 
+  margin-top: 2%;
+}
+
 .main-gif {
   display: block;
   margin: 0 auto; /* Centro el GIF */
@@ -337,5 +345,13 @@ caption {
     margin: 10px; /* Margen más pequeño en móviles */
     margin-left: 10px; /* Margen izquierdo más pequeño */
     margin-right: 10px; /* Margen derecho más pequeño */
+  }
+
+  .test-button{
+    text-align: center; 
+    width: 100%; 
+    height: 100%; 
+    margin-left: 0%; 
+    margin-top: 2%;
   }
 }
