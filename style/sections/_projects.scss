@@ -314,6 +314,7 @@ caption {
     width: 95%; /* Ancho del popup en móviles */
     padding: 10px; /* Ajuste de padding para móviles */
     max-height: 90%; /* Aumentar la altura máxima en móviles */
+    z-index: 1000;
   }
 
   .close {

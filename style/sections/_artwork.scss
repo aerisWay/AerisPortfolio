@@ -1,5 +1,6 @@
 #artwork {
   z-index: 6;
+  
   background: url('../assets/aguagif.gif'); /* Ruta al GIF de fondo */
   background-position: center;
   background-size: cover; /* Ajusta el tamaño del GIF para cubrir toda la sección */
@@ -91,15 +92,15 @@
 }
 
 /* Eliminar o modificar el pseudo-elemento si no es necesario */
-#artwork::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: none; /* Elimina la imagen de textura */
-  opacity: 0; /* O bien establece la opacidad en 0 si no necesitas la superposición */
-  z-index: 7;
-  pointer-events: none;
-}
+// #artwork::after {
+//   content: "";
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-image: none; /* Elimina la imagen de textura */
+//   opacity: 0; /* O bien establece la opacidad en 0 si no necesitas la superposición */
+//   z-index: 7;
+//   pointer-events: none;
+// }
